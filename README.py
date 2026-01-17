@@ -9,7 +9,7 @@ def divide(x,y):
      if(y!=0):
           return x/y
      else:
-          print("Error:divide by zero")
+          return "Error:divide by zero"
 print("Select operation:")
 print("1.Add\n 2.Sub\n 3.Mul\n 4.Div")
 
@@ -19,10 +19,15 @@ while True:
           num1= float(input("Enter first number:"))
           num2= float(input("Enter second number:"))
           if choice=='1':
-               print("result:",add(num1,num2))
+               print("result: ",add(num1,num2))
           elif choice=='2':
-               print("result:",subtract(num1,num2))
+               print("result: ",subtract(num1,num2))
           elif choice=='3':
-               print("result:",multiply(num1,num2))
+               print("result: ",multiply(num1,num2))
           elif choice=='4':
-               print("result:",divide(num1,num2))
+               print("result: ",divide(num1,num2))
+
+               
+          break
+     else:
+          print("Invalid input")
